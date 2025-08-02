@@ -22,7 +22,7 @@ async def on_ready():
     print(f"Bot is ready. Logged in as {bot.user}")
 
 # MongoDB connection setup
-uri = "mongodb+srv://k42625815:Djv4LhtpnjXcI827@discord-bot.t4flbdz.mongodb.net/?retryWrites=true&w=majority&appName=Discord-Bot"
+uri = "uri"
 client: MongoClient = MongoClient(uri, server_api=ServerApi('1'))
 db = client["discord_bot"]
 messages_collection = db["user_messages"]
@@ -114,4 +114,5 @@ async def Report(ctx, member:discord.Member, limit:int=50):
         await member.ban(reason = "Repeateted Toxic behavior won't be tolerated!")
 
 # Run the bot
-bot.run('OTY2NzMzOTEzODczNjAwNTk1.Gxb-JA.FH_6_aCvHPZynNOjkYZ4cq3CNKhdYanoIKGH7M')
+bot.run('Token')
+
